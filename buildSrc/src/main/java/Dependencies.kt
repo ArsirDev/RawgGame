@@ -164,50 +164,6 @@ object Versions {
     const val youtube = "11.1.0"
 }
 
-object ModuleProjectInjection {
-    /**
-     * @param type module of [app]
-     */
-    const val app = ":app"
-    /**
-     * @param type module of [data]
-     */
-    const val data = ":data"
-    /**
-     * @param type module of [domain]
-     */
-    const val domain = ":domain"
-    /**
-     * @param type module of [navigation]
-     */
-    const val navigation = ":navigation"
-    /**
-     * @param type module of [common]
-     */
-    const val common = ":common"
-    /**
-     * @param type module of [splashscreen]
-     */
-    const val splashscreen = ":presentation:splashscreen"
-    /**
-     * @param type module of [welcome]
-     */
-    const val welcome = ":presentation:welcome"
-    /**
-     * @param type module of [home]
-     */
-    const val home = ":presentation:home"
-    /**
-     * @param type module of [favorite]
-     */
-    const val favorite = ":presentation:favorite"
-    /**
-     * @param type module of [detail]
-     */
-    const val detail = ":presentation:detail"
-
-}
-
 object KotlinLibraries {
     /**
      * @param type dependecies of type [kotlin]

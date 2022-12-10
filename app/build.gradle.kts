@@ -39,17 +39,6 @@ android {
 
 dependencies {
 
-    // Module Project Injection
-    implementation(project(ModuleProjectInjection.data))
-    implementation(project(ModuleProjectInjection.domain))
-    implementation(project(ModuleProjectInjection.navigation))
-    implementation(project(ModuleProjectInjection.common))
-    implementation(project(ModuleProjectInjection.splashscreen))
-    implementation(project(ModuleProjectInjection.welcome))
-    implementation(project(ModuleProjectInjection.home))
-    implementation(project(ModuleProjectInjection.favorite))
-    implementation(project(ModuleProjectInjection.detail))
-
     // Kotlin
     implementation(KotlinLibraries.coroutineCore)
     implementation(KotlinLibraries.coroutineAndroid)
@@ -83,6 +72,9 @@ dependencies {
     implementation(Libraries.retrofitGson)
     implementation(Libraries.gson)
     implementation(Libraries.logging)
+    implementation("androidx.appcompat:appcompat:1.5.1")
+    implementation("com.google.android.material:material:1.4.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
     // Kapt
     kapt(Kapt.roomCompiler)

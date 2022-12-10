@@ -14,12 +14,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "PerqaraAssessment"
 include (":app")
-include(":data")
-include(":domain")
-include(":presentation:welcome")
-include(":presentation:splashscreen")
-include(":presentation:home")
-include(":presentation:favorite")
-include(":presentation:detail")
-include(":common")
-include(":navigation")

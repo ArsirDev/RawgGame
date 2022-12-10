@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_game">
+
+    <fragment
+        android:id="@+id/nav_game"
+        android:name="com.example.perqaraassessment.presentation.home.activity.ui.game.fragment.GameFragment"
+        android:label="@string/menu_game"
+        tools:layout="@layout/fragment_game" />
+
+    <fragment
+        android:id="@+id/nav_favorite"
+        android:name="com.example.perqaraassessment.presentation.home.activity.ui.favorite.FavoriteFragment"
+        android:label="@string/menu_favorite"
+        tools:layout="@layout/fragment_favorite" />
+
+    <fragment
+        android:id="@+id/nav_explore"
+        android:name="com.example.perqaraassessment.presentation.home.activity.ui.explore.ExploreFragment"
+        android:label="@string/menu_explore"
+        tools:layout="@layout/fragment_explore" />
+</navigation>

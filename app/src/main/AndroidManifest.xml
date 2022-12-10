@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:name=".GameApplication"
         android:allowBackup="true"
@@ -14,9 +17,34 @@
         android:theme="@style/Theme.PerqaraAssessment"
         tools:targetApi="31">
         <activity
-            android:name=".presentation.splash.Splash"
+            android:name=".presentation.slider.activity.SliderActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".presentation.home.activity.HomeActivity"
+            android:exported="false"
+            android:label="@string/game_rawg_title"
+            android:resizeableActivity="true"
+            android:theme="@style/Theme.PerqaraAssessment.NoActionBar"
+            >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".presentation.welcome.WelcomeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".presentation.splash.activity.Splash"
             android:exported="true"
-            android:label="@string/title_activity_home"
+            android:label="@string/game_rawg_title"
             android:resizeableActivity="true"
             android:theme="@style/Theme.PerqaraAssessment.NoActionBar">
             <intent-filter>
@@ -24,10 +52,15 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

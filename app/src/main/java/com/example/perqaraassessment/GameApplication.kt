@@ -1,7 +1,7 @@
 package com.example.perqaraassessment
 
 import android.app.Application
-import com.example.perqaraassessment.core.util.local
+import com.example.perqaraassessment.util.*
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -13,7 +13,11 @@ class GameApplication: Application() {
             androidLogger()
             androidContext(this@GameApplication)
             modules(
-                local
+                local,
+                remote,
+                splash,
+                slider,
+                game
             )
         }
     }

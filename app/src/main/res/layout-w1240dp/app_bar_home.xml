@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.home.activity.HomeActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/toolbar_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/games_title"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="17sp"
+            android:shadowColor="@color/white"
+            android:shadowDx="2.9"
+            android:shadowDy="1.9"
+            android:shadowRadius="3"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/dark_purple"
+            android:padding="8dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <include
+        android:id="@+id/content_home"
+        layout="@layout/content_home" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
